@@ -277,7 +277,7 @@ const Dashboard = () => {
             {/* Description */}
             <div className="mb-8">
               <div 
-                className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm space-y-6
+                className="bg-white p-8 rounded-xl shadow-sm space-y-6
                            [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:border-b [&_h2]:border-gray-200 [&_h2]:pb-2 [&_h2]:mb-4
                            [&_p]:text-gray-700 [&_p]:leading-relaxed [&_p]:mb-4
                            [&_ul]:space-y-2 [&_ul]:mb-6
