@@ -31,7 +31,7 @@ export async function GET(request: Request) {
     const dataResult = await sql.query(`
       SELECT 
         id, title, description, category, link, author, created_at,
-        views, downloads, rating, is_free as "isFree", 
+        views, downloads, rating, is_free as "isFree", html_content,
         ARRAY[category] as tags
       FROM templates 
       ${whereClause}
