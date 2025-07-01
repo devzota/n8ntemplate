@@ -307,7 +307,7 @@ const Dashboard = () => {
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm">Created</span>
                 </div>
-                <p className="font-medium text-gray-900">{formatDate(selectedTemplate.created)}</p>
+                <p className="font-medium text-gray-900">{formatDate(selectedTemplate.created_at)}</p>
               </div>
             </div>
 
