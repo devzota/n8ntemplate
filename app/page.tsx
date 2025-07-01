@@ -283,7 +283,6 @@ const Dashboard = () => {
                 }}
               />
             </div>
-            </div>
 
             {/* Author & Date */}
             <div className="flex items-center justify-between p-4 bg-gray-50 rounded-xl mb-6">
