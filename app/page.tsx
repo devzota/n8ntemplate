@@ -276,28 +276,13 @@ const Dashboard = () => {
 
             {/* Description */}
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Description</h3>
-              <div className="prose prose-gray max-w-none">
-                <p className="text-gray-700 leading-relaxed text-base">
-                  {selectedTemplate.description}
-                </p>
-                {/* Extended description - you can add more content here */}
-                <p className="text-gray-700 leading-relaxed text-base mt-4">
-                  This template provides a comprehensive solution for your needs. It includes all the necessary components 
-                  and configurations to get you started quickly. The template follows best practices and is designed 
-                  to be easily customizable for your specific requirements.
-                </p>
-                <p className="text-gray-700 leading-relaxed text-base mt-4">
-                  Features included:
-                </p>
-                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                  <li>Easy to implement and customize</li>
-                  <li>Well-documented code structure</li>
-                  <li>Responsive design</li>
-                  <li>Cross-platform compatibility</li>
-                  <li>Regular updates and support</li>
-                </ul>
-              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Chi tiết Workflow</h3>
+              <div 
+                className="prose prose-lg max-w-none bg-gray-50 p-6 rounded-xl border"
+                dangerouslySetInnerHTML={{ 
+                  __html: selectedTemplate.html_content || '<p>Không có nội dung chi tiết</p>' 
+                }}
+              />
             </div>
 
             {/* Author & Date */}
