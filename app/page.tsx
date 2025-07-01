@@ -276,13 +276,12 @@ const Dashboard = () => {
 
             {/* Description */}
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Chi tiết Workflow</h3>
-              <div 
-                className="prose prose-lg max-w-none bg-gray-50 p-6 rounded-xl border"
-                dangerouslySetInnerHTML={{ 
-                  __html: selectedTemplate.html_content || '<p>Không có nội dung chi tiết</p>' 
-                }}
-              />
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Description</h3>
+              <div className="prose prose-gray max-w-none">
+                <p className="text-gray-700 leading-relaxed text-base">
+                  {selectedTemplate.html_content}
+                </p>
+              </div>
             </div>
 
             {/* Author & Date */}
