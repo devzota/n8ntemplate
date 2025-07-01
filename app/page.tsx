@@ -277,14 +277,14 @@ const Dashboard = () => {
             {/* Description */}
             <div className="mb-8">
               <div 
-                className="bg-white p-8 rounded-xl shadow-sm space-y-6
+                className="bg-white rounded-xl space-y-6
                            [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:border-b [&_h2]:border-gray-200 [&_h2]:pb-2 [&_h2]:mb-4
                            [&_p]:text-gray-700 [&_p]:leading-relaxed [&_p]:mb-4
                            [&_ul]:space-y-2 [&_ul]:mb-6
                            [&_ol]:space-y-3 [&_ol]:mb-6
                            [&_li]:text-gray-700 [&_li]:leading-relaxed
                            [&_strong]:text-gray-900 [&_strong]:font-semibold
-                           [&_a]:text-blue-600 [&_a]:underline hover:[&_a]:text-blue-800"
+                           [&_a]:text-green-700 [&_a]:underline hover:[&_a]:text-blue-800"
                 dangerouslySetInnerHTML={{ 
                   __html: selectedTemplate.html_content || '<p>Không có nội dung chi tiết</p>' 
                 }}
