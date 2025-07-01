@@ -58,7 +58,7 @@ const Dashboard = () => {
         ...(search && { search })
       });
 
-      const response = await fetch(`/api/notion?${params}`);
+      const response = await fetch(`/api/templates?${params}`);
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
