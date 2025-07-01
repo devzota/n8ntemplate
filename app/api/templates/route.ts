@@ -31,9 +31,15 @@ export async function GET(request: Request) {
     const dataResult = await sql.query(`
       SELECT 
         id, title, description, category, link, author, created_at,
-        views, downloads, rating, is_free as "isFree", html_content,
-        ARRAY[category] as tags
-      FROM templates 
+        views, downloads, rating, is_free as "isFree",
+        html_content,
+        ARRAY[category] as tags,
+        json_build_object(
+          'views', views,
+          'downloads', downloads, 
+          'rating', rating
+        ) as stats
+      FROM templates
       ${whereClause}
       ORDER BY created_at DESC
       LIMIT $${paramIndex} OFFSET $${paramIndex + 1}
